@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Ali Yamini</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Ali Yamini</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/p_pic.jfif" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#HSI">Research</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#startup">Startup</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Ali
+                        <span class="text-primary">Yamini</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        University of Waterloo, ECE
+                        <a href="#">ali.yamini[at]uwaterloo.ca</a>
+                    </div>
+                    <p class="lead mb-5">I'm a MASc student in the Department of Electrical and Computer engineering at the University of Waterloo. I love AI driven technologies and i'm pursuing it with great effort. I also design web applications and try to come up with new ideas to work on. I love reading, hiking, listening to music and doing graphic designs in my spare time.</p>
+                    <div class="social-icons">
+                        <a target="_blank" class="social-icon" href="https://www.linkedin.com/in/ali-yamini/"><i class="fab fa-linkedin-in"></i></a>
+                        <a target="_blank" class="social-icon" href="https://github.com/opeerator"><i class="fab fa-github"></i></a>
+                        <a target="_blank" class="social-icon" href="https://orcid.org/0000-0003-0643-4048"><i class="fab fa-orcid"></i></a>
+                        <a target="_blank" class="social-icon" href="https://stackoverflow.com/users/10711289/overlord"><i class="fab fa-stack-overflow"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Research-->.
+            <section class="resume-section r_section_2" id="interests" >
+                <h2 class="text-center mx-4" id="HSI">Human-Swarm Interactions</h3>
+                <br>
+                <h5 class="text-center">(University Of Southampton)</h3>
+                <div class="social-icons mx-4">
+                    <a target="_blank" class="social-icon" href="https://github.com/mdivband/arcade_swarm"><i class="fab fa-github"></i></a>
+                    <a target="_blank" class="social-icon" href="https://youtube.com/playlist?list=PLP6KYkkXj-QYT-V0dhr0Ni07ItKmnokVD"><i class="fab fa-youtube"></i></a>
+                </div>
+            </section>
+            <section class="resume-section r_section" id="interests" >
+                <div class="resume-section-content mx-4">
+                    <h3 class="mb-2  text-center">Reinforcement Learning</h2>
+                    <div><img src="assets/img/g1.gif" class="img-fluid mb-2"></div>
+                    <p align="justify">From the start of the project, we were trying to implement a machine learning solution for navigating the swarm of drones toward disaster zone. The necessity of this was due to our intent to decrease the human operator’s help in navigating the drones. We experimented with implementing a deep-q-learning solution using Gym library in python. To improve the experiment’s performance, due to the high number of drones in the environment, we decreased the size of our drone maps (Confidence & Belief) to 40 by 40 in our computations.</p>
+                </div>
+                <div class="resume-section-content mx-4">
+                    <h3 class="mb-2  text-center">User study #1: No Maps</h2>
+                    <div><img src="assets/img/g2.gif" class="img-fluid mb-2"></div>
+                    <p align="justify">We wanted to conduct a user study if there was no global view on the swarm of drones (Real situation), Having only our confidence map (A matrix that shows visited and not visited cells), belief (A matrix showing important points such as disaster locations) map, and error rate. we gave the user the option to select areas inside the confidence map in order to attract or deflecting the swarm from that exact location. The area selection process evolved as we understood that selecting an area instead of a single point makes controlling the swarm easier.</p>
+                </div>
+                <div class="resume-section-content mx-4">
+                    <h3 class="mb-2  text-center">User study #2: Full Maps</h2>
+                    <div><img src="assets/img/g3.gif" class="img-fluid mb-2"></div>
+                    <p align="justify">In this user study, we were trying to get user input from the global map (simulation zone) to simulate the case that the operator can control each of the drones in the experiment individually. To achieve this, we changed our simulation so that the operator can adjust the drone location (setting confidence value for target location to zero to attract the drone) by simply dragging and dropping a specific drone to a particular site. The mentioned task proved challenging in our studies since controlling each drone individually is not possible in a swarm with lots of drones.</p>
+                </div>
+            </section>
+
+            <section class="resume-section r_section_2">
+                <h2 class="text-center mx-4">ML-based Healthcare monitoring system</h3>
+                <br>
+                <h5 class="text-center">(IAU Science & Research branch)</h3>
+            </section>
+            <section class="resume-section r_section" id="interests" >
+                <div class="resume-section-content mx-4">
+                    <h3 class="mb-2">Model</h2>
+                    <div><img src="assets/img/c_layer.PNG" class="img-fluid mb-2"></div>
+                </div>
+                <div class="resume-section-content mx-4">
+                    <h3 class="mb-2">Abstract</h2>
+                    <p align="justify">Advancement in sensor technologies has resulted in rapid evolution of Internet of Things (IoT) applications for developing behavioral and physiological monitoring systems such as IoT-based student healthcare monitoring system. Nowadays, a growing number of students living alone scattered over wide geographical areas, and tracking their health function status is necessary. In this paper, an IoT-based student healthcare monitoring model is proposed to continuously check student vital signs and detect biological and behavioral changes via smart healthcare technologies. In this model, vital data are collected via IoT devices and data analysis is carried out through the machine learning methods for detecting the probable risks of student’s physiological and behavioral changes. The experimental results reveal that the proposed model meets the efficiency and proper accuracy for detecting the students’ condition. After evaluating the proposed model, the support vector machine has achieved the highest accuracy of 99.1% which is a promising result for our purpose. The results outperformed decision tree, random forest, and multilayer perceptron neural network algorithms as well.</p>
+                    <a target="_blank" href="papers/ml-based-healthcare.pdf">Download PDF</a>
+                </div>
+            </section>
+
+            <section class="resume-section r_section_2">
+                <h2 class="text-center mx-4">Clustering-based software modularisation</h3>
+                <br>
+                <h5 class="text-center">(Guangzhou Vocational and Technical University)</h3>
+            </section>
+            <section class="resume-section r_section" id="interests" >
+                <div class="resume-section-content mx-4">
+                    <h3 class="mb-2">Taxonomy</h2>
+                    <div><img src="assets/img/clustering.PNG" class="img-fluid mb-2">
+                    <img src="assets/img/chart.PNG" class="img-fluid mb-2">
+                    </div>
+                </div>
+                <div class="resume-section-content mx-4">
+                    <h3 class="mb-2">Abstract</h2>
+                    <p align="justify">Software module clustering approaches can provide a better understanding of large and complex software systems through decomposing the enterprise resources into classified modules which are smaller, and therefore easier-to-handle. As the dimensions and complexity of enterprise software projects are continuously increasing, handling a large software project is going to be more challenging. The challenge would be more complex if the experienced personnel is considered as well. Therefore, appropriate automatic software modularization clustering methods are required in resource management. This paper provides a Systematic Literature Review (SLR) on the software modularization clustering models. We studied a wide range of papers from 2001 to 2020 to provide our SLR. Also, a technical taxonomy is presented to classify the existing papers on software modularization clustering models and algorithms. The software module clustering methods are categorized into three main classes. Finally, new challenges and forthcoming issues of software modularization clustering models are presented.</p>
+                    <a target="_blank" href="papers/software-module-clustering.pdf">Download PDF</a>
+                </div>
+            </section>
+
+            <hr class="m-0" />
+            <!-- Publications -->
+            <section class="resume-section" id="publications">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Publications</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">A new machine learning-based healthcare monitoring model for student’s condition diagnosis in internet of things environment</h3>
+                            <div class="subheading mb-3">Soft Computing, DOI LINK: <a target="_blank" href="https://link.springer.com/article/10.1007%2Fs00500-020-05003-6">10.1007/s00500-020-05003-6</a></div>
+                            <p>Souri, A., Ghafour, M., Ahmed, A., Safara, F., <strong>Yamini, Ali</strong>, & Hoseyninezhad, M.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Published - 2020</span></div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Clustering-based software modularisation models for resource management in enterprise systems</h3>
+                            <div class="subheading mb-3">Enterprise Information Systems, DOI LINK: <a target="_blank" href="https://doi.org/10.1080/17517575.2020.1830307">10.1080/17517575.2020.1830307</a></div>
+                            <p>Li, J., & <strong>Yamini, Ali.</strong></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Published - 2020</span></div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Iot for smart environment applications (Book Chapter)</h3>
+                            <div class="subheading mb-3">ML/IoT for Smart Environments/Cities, DOI LINK: <a target="_blank" href="https://doi.org/10.1007/978-3-031-09729-4_2">10.1007/978-3-031-09729-4_2</a></div>
+                            <p>Zamanifar, A., & <strong>Yamini, Ali.</strong></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Published - 2022</span></div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Fog computing in iot based healthcare (Book chapter)</h3>
+                            <div class="subheading mb-3">Cloud Computing in Medical Imaging, Healthcare Technologies and Services, LINK: <a target="_blank" href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003145189-4/fog-computing-iot-based-healthcare-systems-azadeh-zamanifar-ali-yamini&sa=D&source=apps-viewer-frontend&ust=1677258918152481&usg=AOvVaw02vdX6_rb5Td9BmutCvTOV&hl=en">taylor&francis</a></div>
+                            <p>Zamanifar, A., & <strong>Yamini, Ali.</strong></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Published - 2023</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Publications -->
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">IAU science & research branch</h3>
+                            <div class="subheading mb-3">Bachelor of engineering</div>
+                            <div>Computer Engineering - Software Development</div>
+                            <p>GPA: 18.39 (Scale of 20)</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2017 - September 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Allameh Amini High School (National Organization for Development of Exceptional Talents)</h3>
+                            <div class="subheading mb-3">Mathmatics & Physics</div>
+                            <p>GPA: 18.68/20</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2012 - June 2016</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+
+            <!-- Research-->.
+            <section class="resume-section r_section_2" id="startup" >
+                <h2 class="text-center mx-4" id="HSI">Startup</h3>
+                <br>
+                <h5 class="text-center">(DigikalaNext-EditoraAi)</h3>
+                <div class="social-icons mx-4">
+                    <a target="_blank" class="social-icon" href="https://github.com/Editora-Ai/editora-ai"><i class="fab fa-github"></i></a>
+                </div>
+            </section>
+            <section class="resume-section r_section" id="interests" >
+                <div class="resume-section-content mx-4">
+                    <h3 class="mb-2 text-center">Main Page</h2>
+                    <div><img src="assets/img/edit-1.jfif" class="img-fluid mb-2"></div>
+                    <p align="justify">Background Removal: Detecting and removing background from product images automatically. You can use this service for your e-commerce images!</p>
+                </div>
+                <div class="resume-section-content mx-4">
+                    <h3 class="mb-2 text-center">Dashboard</h2>
+                    <div><img src="assets/img/edit-2.jfif" class="img-fluid mb-2"></div>
+                    <p align="justify">Scaling: Using this service, you can upscale and improve the details within an image. It's widely used for who can not take photo with professional cameras!</p>
+                </div>
+                <div class="resume-section-content mx-4">
+                    <h3 class="mb-2 text-center">API</h2>
+                    <div><img src="assets/img/edit3.jfif" class="img-fluid mb-2"></div>
+                    <p align="justify">Classification: In this service you can classify an image according to its visual content and you don't need to do labeling on yourself.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Programming languages: Python, C, C++
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Front-end: HTML / CSS / Javascript / Bootstap / Sass / React
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Back-end: Django / Flask / Redis / Celery / DRF / Postgres / MongoDB / Mysql
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Machine learning: Tensorflow / Pytorch / Numpy / Pandas / Matplotlib / Gym
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
